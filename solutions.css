@@ -102,15 +102,32 @@
 }
 
 .ex-12-button:hover .ex-12-top-white {
-    animation: muovibianco 1s linear;
+    animation: muovibiancosopra 1s linear;
 }
-@keyframes muovibianco {
+@keyframes muovibiancosopra {
     0% {
         left: 10%;
     }
     50% {
-        left: 50%;
+        left: calc(100% - 60px);
     }
     100% {
         left: 10%;
     }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: muovibiancosotto 1s linear;
+}
+    
+@keyframes muovibiancosotto {
+        0% {
+            right: 20%;
+        }
+        50% {
+            right: calc(100% - 60px);
+        }
+        100% {
+            right: 20%;
+        }
+}
