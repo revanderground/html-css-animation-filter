@@ -87,9 +87,9 @@
 }
 
 .ex-11-icon:hover {
-    animation: spinALittleBit 1s linear;
+    animation: spin270 1s linear;
 }
-@keyframes spinALittleBit {
+@keyframes spin270 {
     0% {
         transform: rotate(0);
     }
@@ -100,3 +100,17 @@
         transform: rotate(0);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: muovibianco 1s linear;
+}
+@keyframes muovibianco {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 10%;
+    }
